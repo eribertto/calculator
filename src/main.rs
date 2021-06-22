@@ -23,4 +23,9 @@ fn main() {
 
 	print!("what operation would you like to do? [+-*/]: ");
 	read(&mut operator);
+
+	// change input to numbers from strings
+	let num1: f32 = num1.trim().parse().unwrap();
+	let num2: f32 = num2.trim().parse().unwrap();
+	let operator: char = operator.trim().chars().next().unwrap();
 }
