@@ -15,12 +15,12 @@ fn main() {
 	let mut num2 = String::new();
 	let mut operator = String::new();
 
-	println!("what is the first number?: ");
+	print!("what is the first number?: ");
 	read(&mut num1);
 
-	println!("what is the second number?: ");
+	print!("what is the second number?: ");
 	read(&mut num2);
 
-	println!("what operation would you like to do? [+-*/]: ");
+	print!("what operation would you like to do? [+-*/]: ");
 	read(&mut operator);
 }
