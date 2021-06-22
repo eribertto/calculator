@@ -16,4 +16,11 @@ fn main() {
 	let mut operator = String::new();
 
 	println!("what is the first number?: ");
+	read(&mut num1);
+
+	println!("what is the second number?: ");
+	read(&mut num2);
+
+	println!("what operation would you like to do? [+-*/]: ");
+	read(&mut operator);
 }
