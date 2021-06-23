@@ -41,12 +41,13 @@ fn main() {
     	
     	// conditionals with negation
     	if !operators.contains(operator) {
-    	    println!("unknown operator!");
+			// loop to get correct operator
+			loop {
+				println!("Unknown operator, use valid symbols [ + - * / ]");
+			}
     	    //return;
     	    // use continue to loop over
-    	    continue;
-    	    // note: a good exercise to the newbie is to make a loop when the operator is unknown
-    	    // that way only the operator will change and not the numbers
+			continue;
     	}
     	// note the use of single quote inside match block since it is matching string literals
     	let result = match operator {
