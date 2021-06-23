@@ -36,6 +36,7 @@ fn main() {
     	// do some initial debug
     	println!("num1: {} num2 {} operator: {}", num1, num2, operator);
     	
+		// whitelist of operators, not listed is not accepted.
     	let operators = String::from("+-*/");
     	
     	// conditionals with negation
