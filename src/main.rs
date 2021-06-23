@@ -28,4 +28,7 @@ fn main() {
 	let num1: f32 = num1.trim().parse().unwrap();
 	let num2: f32 = num2.trim().parse().unwrap();
 	let operator: char = operator.trim().chars().next().unwrap();
+
+	// do some initial debug
+	println!("num1: {} num2 {} operator: {}", num1, num2, operator);
 }
