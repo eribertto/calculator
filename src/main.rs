@@ -41,10 +41,8 @@ fn main() {
     	
     	// conditionals with negation
     	if !operators.contains(operator) {
-			// loop to get correct operator
-			loop {
-				println!("Unknown operator, use valid symbols [ + - * / ]");
-			}
+			// loop is not working, need to make a function for looping
+			println!("Unknown operator, use valid symbols [ + - * / ]");
     	    //return;
     	    // use continue to loop over
 			continue;
