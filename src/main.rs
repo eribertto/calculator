@@ -10,14 +10,17 @@ fn read(input: &mut String) {
 fn main() {
     println!("Welcome to Rust simple calculator program!");
 	println!("------");
+	let mut num1 = String::new();
+	let mut num2 = String::new();
+	let mut operator = String::new();
+	// whitelist of operators, not listed is not accepted.
+	let operators = String::from("+-*/");
 	
 	// make the loop
-	
 	loop {
-
-    	let mut num1 = String::new();
-    	let mut num2 = String::new();
-    	let mut operator = String::new();
+		num1.clear();
+		num2.clear();
+		operator.clear();
     
     	print!("what is the first number?: ");
     	read(&mut num1);
@@ -36,8 +39,6 @@ fn main() {
     	// do some initial debug
     	// println!("num1: {} num2 {} operator: {}", num1, num2, operator);
     	
-		// whitelist of operators, not listed is not accepted.
-    	let operators = String::from("+-*/");
     	
     	// conditionals with negation
     	if !operators.contains(operator) {
