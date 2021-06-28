@@ -11,12 +11,24 @@ fn main() {
     println!("Welcome to Rust simple calculator program!");
     println!("------");
 
-    // remove the loop
-
     let mut num1 = String::new();
     let mut num2 = String::new();
     let mut operator = String::new();
+    // whitelist of operators, not listed is not accepted.
+    let operators = String::from("+-*/");
 
+	// clear the variables
+	num1.clear();
+	num2.clear();
+	operator.clear();
+
+	/* TODO:
+	* make function for user input
+	* get valid number input else give a loop to repeat or quit.
+	* applicable for nums 1 and 2
+	* for operator variable still a todo.
+
+	*/
     print!("what is the first number?: ");
     read(&mut num1);
 
@@ -31,18 +43,11 @@ fn main() {
     let num2: f32 = num2.trim().parse().unwrap();
     let operator: char = operator.trim().chars().next().unwrap();
 
-    // do some initial debug
-    // println!("num1: {} num2 {} operator: {}", num1, num2, operator);
-
-    // whitelist of operators, not listed is not accepted.
-    let operators = String::from("+-*/");
 
     // conditionals with negation
     if !operators.contains(operator) {
         // loop is not working, need to make a function for looping
         println!("Unknown operator, use valid symbols [ + - * / ]");
-        //return;
-        // use continue to loop over
     }
     // note the use of single quote inside match block since it is matching string literals
     let result = match operator {
