@@ -59,4 +59,5 @@ fn main() {
     }; // note the closing semicolon
        // show the operation output
     println!("the result of {} {} {} = {}", num1, operator, num2, result);
+
 }
